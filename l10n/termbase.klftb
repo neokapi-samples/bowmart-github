@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "kapi-termbase-format",
+  "concepts": [
+    {
+      "id": "term:bowmart",
+      "domain": "product",
+      "definition": "DNT — product name; keep in Latin script",
+      "source": "terminology",
+      "terms": [
+        {
+          "text": "BowMart",
+          "locale": "en",
+          "status": "preferred"
+        },
+        {
+          "text": "BowMart",
+          "locale": "fr",
+          "status": "preferred"
+        },
+        {
+          "text": "BowMart",
+          "locale": "de",
+          "status": "preferred"
+        },
+        {
+          "text": "BowMart",
+          "locale": "ja",
+          "status": "preferred"
+        },
+        {
+          "text": "BowMart",
+          "locale": "nb",
+          "status": "preferred"
+        }
+      ]
+    },
+    {
+      "id": "term:paypal",
+      "domain": "brand",
+      "definition": "DNT — third-party brand",
+      "source": "terminology",
+      "terms": [
+        {
+          "text": "PayPal",
+          "locale": "en",
+          "status": "preferred"
+        },
+        {
+          "text": "PayPal",
+          "locale": "fr",
+          "status": "preferred"
+        },
+        {
+          "text": "PayPal",
+          "locale": "de",
+          "status": "preferred"
+        },
+        {
+          "text": "PayPal",
+          "locale": "ja",
+          "status": "preferred"
+        },
+        {
+          "text": "PayPal",
+          "locale": "nb",
+          "status": "preferred"
+        }
+      ]
+    },
+    {
+      "id": "term:applepay",
+      "domain": "brand",
+      "definition": "DNT — third-party brand",
+      "source": "terminology",
+      "terms": [
+        {
+          "text": "Apple Pay",
+          "locale": "en",
+          "status": "preferred"
+        },
+        {
+          "text": "Apple Pay",
+          "locale": "fr",
+          "status": "preferred"
+        },
+        {
+          "text": "Apple Pay",
+          "locale": "de",
+          "status": "preferred"
+        },
+        {
+          "text": "Apple Pay",
+          "locale": "ja",
+          "status": "preferred"
+        },
+        {
+          "text": "Apple Pay",
+          "locale": "nb",
+          "status": "preferred"
+        }
+      ]
+    },
+    {
+      "id": "term:aiassistant",
+      "domain": "product",
+      "definition": "Preferred over \"bot\" or \"Copilot\"",
+      "source": "terminology",
+      "terms": [
+        {
+          "text": "AI assistant",
+          "locale": "en",
+          "status": "preferred"
+        },
+        {
+          "text": "assistant IA",
+          "locale": "fr",
+          "status": "preferred"
+        },
+        {
+          "text": "KI-Assistent",
+          "locale": "de",
+          "status": "preferred"
+        },
+        {
+          "text": "AIアシスタント",
+          "locale": "ja",
+          "status": "preferred"
+        },
+        {
+          "text": "AI-assistent",
+          "locale": "nb",
+          "status": "preferred"
+        }
+      ]
+    }
+  ]
+}

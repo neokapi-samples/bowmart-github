@@ -3,7 +3,7 @@
   "kind": "kapi-localization-format",
   "generator": {
     "id": "@neokapi/kapi-react",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "project": {
     "id": "app",

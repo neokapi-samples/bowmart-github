@@ -24,7 +24,7 @@ defaults:
   target_languages: [fr, de, ja, nb]
   brand_voice:
     profile_file: l10n/brand-voice.yaml
-  termbase_source: l10n/glossary.csv
+  termbase_source: l10n/termbase.klftb
 content:
   - path: i18n/**/*.klf
     target: i18n-{lang}/{path}.klf
