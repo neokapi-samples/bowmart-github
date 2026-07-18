@@ -1,0 +1,30 @@
+# kapi project recipe for BowMart.
+#
+# Content = the localization catalogs kapi-react extracts from the React
+# source (i18n/**/*.klf). kapi translates them into a sibling i18n-<lang>/
+# tree; `kapi-react compile` then turns those into the runtime catalogs the
+# app loads (public/translations/<lang>.json).
+#
+# The source of truth is the React source; the catalogs are generated. Run
+# `npm run i18n:extract` after changing UI copy, then let the pipeline
+# translate.
+version: v1
+name: bowmart
+
+# Server-connected project: kapi push sends the source catalogs to Bowrain,
+# which converges (TM -> AI -> checks) and delivers the reviewed
+# translations back as pull requests via the GitHub App. Fill the compound URL
+# after provisioning the BowMart project on Bowrain (kapi init, or the ctrl UI).
+server:
+  url: "https://app.bowrain.cloud/<workspace>/<project-id>"   # <server>/<workspace>/<project-id>
+  stream: "$auto"      # auto-detect from git branch / CI
+
+defaults:
+  source_language: en
+  target_languages: [fr, de, ja, nb]
+  brand_voice:
+    profile_file: l10n/brand-voice.yaml
+  termbase_source: l10n/glossary.csv
+content:
+  - path: i18n/**/*.klf
+    target: i18n-{lang}/{path}.klf

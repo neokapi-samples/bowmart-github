@@ -1,0 +1,16 @@
+# A light brand-voice profile for the storefront copy: plain, warm, concrete.
+name: BowMart
+description: >-
+  Friendly, plain retail voice for a small-shop storefront. Speak to the
+  shopkeeper like a helpful colleague; concrete over clever.
+tone:
+  personality: [warm, plain, concrete]
+  formality: neutral
+  humor: light
+style:
+  active_voice: true
+  sentence_length: short
+  prohibited_patterns:
+    - regex: '\b(leverage|synergy|utili[sz]e|seamless(?:ly)?|game-changing|revolutionary)\b'
+      description: Marketing filler
+      severity: major
