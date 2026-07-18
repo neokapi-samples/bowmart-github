@@ -9,7 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "i18n:extract": "kapi-react extract --config kapi-react.config.json --src \"src/**/*.{tsx,jsx}\" --out i18n/ --target-locale qps",
-    "i18n:compile": "for d in i18n-*; do [ -d \"$d\" ] && kapi-react compile \"$d\" --out public/translations; done"
+    "i18n:compile": "kapi-react compile i18n $(ls -d i18n-* 2>/dev/null) --out public/translations --review 2>/dev/null || true"
   },
   "dependencies": {
     "react": "^19.2.7",
@@ -23,6 +23,6 @@
     "oxlint": "^1.71.0",
     "typescript": "~6.0.2",
     "vite": "^8.1.1",
-    "@neokapi/kapi-react": "^1.1.0"
+    "@neokapi/kapi-react": "^1.2.0"
   }
 }

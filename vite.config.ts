@@ -14,6 +14,6 @@ export default defineConfig({
   base: process.env.VITE_BASE ?? "/",
   plugins: [
     react(),
-    neokapi({ mode: "runtime", componentMap: kapiReactConfig.componentMap }),
+    neokapi({ mode: "runtime", review: true, componentMap: kapiReactConfig.componentMap }),
   ],
 });
