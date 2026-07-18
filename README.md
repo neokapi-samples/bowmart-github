@@ -1,22 +1,22 @@
-# BowMart — localize a React app in GitHub Actions
+# BowMart — a server-connected React localization demo (Bowrain + GitHub)
 
-A sample storefront that shows how to add localization to a React app with
-[kapi](https://github.com/neokapi/neokapi) — the translations are produced in
-your CI pipeline, delivered as pull requests, and published as a live
-multilingual site on GitHub Pages.
+A sample storefront that shows how to localize a React app with
+[Bowrain](https://bowrain.cloud), the governed localization platform. Unlike the
+kapi-in-CI samples, the translations are **not** produced in this pipeline: you
+push the source copy to Bowrain, which converges it (translation memory → AI →
+checks) and delivers the reviewed translations back as **pull requests**. The
+live multilingual site is published on GitHub Pages.
 
 **Live site:** _(enable Pages on this repo → Settings → Pages → Source: GitHub
 Actions; the first push deploys it)_
 
-## Read the git history
+## From plain React to a Bowrain-connected, localized app
 
-The three commits are the whole story:
-
-1. **Scaffold** — a vanilla `npm create vite` React + TypeScript app.
-2. **BowMart storefront** — a small store (home, products, cart, checkout,
-   account) written in plain English. No localization yet.
-3. **Add localization** — kapi-react, a `.kapi` recipe, and the CI pipeline.
-   This is the only commit that adds i18n. Diff it to see exactly what it takes.
+The source is a small storefront (home, products, cart, checkout, account)
+written in plain English. Adding localization took kapi-react, a `.kapi` recipe
+with a `server:` block, and connecting the recipe to a Bowrain project — no
+message keys and no `t()` calls in the components. Diff the localization commit
+to see exactly what it takes.
 
 ## How it works
 
@@ -27,12 +27,14 @@ You write natural English in your components — no message keys, no `t()` calls
 ```
 
 The [kapi-react](https://www.npmjs.com/package/@neokapi/kapi-react) Vite plugin
-instruments those strings at build time, and its CLI extracts them into
-translation catalogs. The pipeline then:
+instruments those strings at build time, and its CLI extracts them into a source
+catalog. From there the flow is server-side:
 
 ```
-kapi-react extract   src/**/*.tsx   → i18n/**/*.klf              (source catalog)
-kapi (in CI)         i18n/          → i18n-<lang>/                (translated)
+kapi-react extract   src/**/*.tsx   → i18n/**/*.klf        (source catalog)
+kapi push            i18n/          → Bowrain               (send source to the server)
+Bowrain              converges: translation memory → AI → brand & terminology checks
+kapi pull  /  PR     Bowrain        → i18n-<lang>/          (reviewed translations back)
 kapi-react compile   i18n-<lang>/   → public/translations/<lang>.json
 vite build           → the static site → GitHub Pages
 ```
@@ -40,26 +42,29 @@ vite build           → the static site → GitHub Pages
 A language that is only partway translated falls back to English on the live
 site. Coverage grows over time; it never blocks a deploy.
 
-## The pipeline (`.github/workflows/localize.yml`)
+## The Bowrain connection
 
-Three ways in, all dogfooding [`setup-kapi`](https://github.com/neokapi/setup-kapi)
-+ [`kapi-action`](https://github.com/neokapi/kapi-action):
+The `bowmart.kapi` recipe declares a `server:` block pointing at a Bowrain
+project (`<server>/<workspace>/<project-id>`). Two commands drive the loop:
 
-- **On a pull request** — the source gate. `kapi check` verifies the English
-  copy against the brand voice *before* it is translated, and comments on the
-  PR. Try adding a marketing cliché ("leverage synergy") and watch it fail.
-- **Nightly / manual (pseudo)** — refreshes the pseudo-locale and opens a PR.
-  Keyless, free, deterministic: every string is expanded and accented
-  (`▒ Ƀŕöŵšé þŕöđüçţš ▒`), which surfaces truncation and layout bugs before a
-  translator is involved. This is the always-on "watch the pipeline run" demo.
-- **Manual (ai)** — translates into the real languages (French, German,
-  Japanese, Norwegian) with an AI provider and opens a PR you review before
-  merging. Add a `GEMINI_API_KEY` repo secret and run the workflow with
-  `mode: ai`. (Any provider works — set the matching key and `KAPI_AI_PROVIDER`;
-  this repo is wired for Gemini.)
+- **`kapi push`** — sends the source catalogs to Bowrain. The server converges
+  them: it leverages the project translation memory, fills gaps with an AI
+  provider, and runs brand-voice and terminology checks (the project glossary is
+  a committed `l10n/termbase.klftb` — brand terms like *BowMart* are marked
+  do-not-translate and stay verbatim in every locale).
+- **`kapi pull`** — brings the reviewed translations back into `i18n-<lang>/`.
+  On a connected repository the Bowrain **GitHub App** opens a pull request
+  instead, so a human reviews the translations before they land.
 
-The live site is rebuilt and deployed by `.github/workflows/pages.yml` on every
-push to `main`.
+Translation and governance happen on the server, not in your CI — this pipeline
+only rebuilds and publishes the site.
+
+## The pipeline (`.github/workflows/pages.yml`)
+
+One workflow, no translation in CI: it regenerates the source catalog
+(`i18n/**/*.klf`) from the React source, compiles the committed catalogs (source
++ any Bowrain-delivered `i18n-<lang>/`) into the runtime dictionaries the app
+loads, builds with the Pages base path, and deploys to GitHub Pages.
 
 ## Run it locally
 
@@ -71,11 +76,13 @@ npm run i18n:extract   # pull strings from the React source → i18n/
 npm run i18n:compile   # build the runtime catalogs the app loads
 ```
 
-Producing the actual translations is the pipeline's job — see the workflow
-above, or run `kapi` yourself with the [CLI](https://github.com/neokapi/neokapi).
+Producing the translations is Bowrain's job — `kapi push` to send the source,
+`kapi pull` to bring the reviewed translations back. See the
+[kapi CLI](https://github.com/neokapi/neokapi).
 
-## Use this yourself
+## In-context review
 
-This repo is a template — click **Use this template**, or copy the
-`localize.yml` / `pages.yml` workflows and the `kapi-react` wiring into your own
-Vite + React app.
+The deployed site embeds a read-only review overlay: append `?kapi-review` to the
+URL (or click the *kapi review* pill) to highlight every translated string and
+browse them by file, or `?kapi-focus=<hash>` to jump straight to one block in
+context.
