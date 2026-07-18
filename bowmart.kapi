@@ -13,10 +13,10 @@ name: bowmart
 
 # Server-connected project: kapi push sends the source catalogs to Bowrain,
 # which converges (TM -> AI -> checks) and delivers the reviewed
-# translations back as pull requests via the GitHub App. Fill the compound URL
-# after provisioning the BowMart project on Bowrain (kapi init, or the ctrl UI).
+# translations back as pull requests via the GitHub App. The compound URL is
+# <server>/<workspace>/<project-id>, filled in when the project was provisioned.
 server:
-  url: "https://app.bowrain.cloud/<workspace>/<project-id>"   # <server>/<workspace>/<project-id>
+  url: https://app.bowrain.cloud/github-samples/96DtN65Z
   stream: "$auto"      # auto-detect from git branch / CI
 
 defaults:
