@@ -1,0 +1,987 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "kapi-localization-format",
+  "generator": {
+    "id": "neokapi",
+    "version": "1.0"
+  },
+  "project": {
+    "id": "neokapi-output",
+    "sourceLocale": "en"
+  },
+  "documents": [
+    {
+      "id": "src/App.tsx",
+      "documentType": "jsx",
+      "path": "src/App.tsx",
+      "blocks": [
+        {
+          "id": "src/App.tsx:38:0",
+          "hash": "g0usbOyyRTq",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "BowMart"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "BowMart"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 38,
+            "component": "App",
+            "jsxPath": "a",
+            "element": "a"
+          }
+        },
+        {
+          "id": "src/App.tsx:42:1",
+          "hash": "2ARGtvlNBJq",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Home"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Startseite"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 42,
+            "component": "App",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        },
+        {
+          "id": "src/App.tsx:45:2",
+          "hash": "kUru8kuHY6f",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Products"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Produkte"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 45,
+            "component": "App",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        },
+        {
+          "id": "src/App.tsx:48:3",
+          "hash": "4F496zgKUOH",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Cart"
+            },
+            {
+              "ph": {
+                "id": "1",
+                "type": "jsx:node",
+                "data": "cart.length > 0 && <span className=\"badge\">{cart.length}</span>",
+                "equiv": "=m0"
+              }
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Warenkorb"
+              }
+            ]
+          },
+          "placeholders": [
+            {
+              "name": "=m0",
+              "kind": "node",
+              "jsType": "ReactNode",
+              "sourceExpr": "cart.length > 0 && <span className=\"badge\">{cart.length}</span>",
+              "optional": true
+            }
+          ],
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 48,
+            "component": "App",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        },
+        {
+          "id": "src/App.tsx:51:4",
+          "hash": "Wvwt96FrJJ",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Checkout"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Zur Kasse"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 51,
+            "component": "App",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        },
+        {
+          "id": "src/App.tsx:54:5",
+          "hash": "bYGWHJslov0",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Account"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Konto"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 54,
+            "component": "App",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        },
+        {
+          "id": "src/App.tsx:91:6",
+          "hash": "9GOHp4UczCb",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "BowMart is a storefront and order platform for small retailers."
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "BowMart ist eine Storefront- und Bestellplattform für kleine Einzelhändler."
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 91,
+            "component": "App",
+            "jsxPath": "p",
+            "element": "p"
+          }
+        },
+        {
+          "id": "src/App.tsx:104:7",
+          "hash": "fZz1sOCFXjo",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Everything for your store, in one place"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Alles für Ihren Shop, an einem Ort"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 104,
+            "component": "Home",
+            "jsxPath": "h1",
+            "element": "h1"
+          }
+        },
+        {
+          "id": "src/App.tsx:105:8",
+          "hash": "40ms7gWtLTK",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "BowMart brings your catalog, orders, and customers together so you can spend less time switching tools and more time selling."
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "BowMart bringt Ihren Katalog, Ihre Bestellungen und Ihre Kunden zusammen, damit Sie weniger Zeit mit dem Wechseln zwischen Tools verbringen und mehr Zeit mit dem Verkaufen."
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 105,
+            "component": "Home",
+            "jsxPath": "p",
+            "element": "p"
+          }
+        },
+        {
+          "id": "src/App.tsx:109:9",
+          "hash": "g2y4s8cmbP5",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Browse products"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Produkte durchsuchen"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 109,
+            "component": "Home",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        },
+        {
+          "id": "src/App.tsx:112:10",
+          "hash": "2U30GldDdmq",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "BowMart is a storefront and order platform for small retailers. Connect your products, take payments, and ship orders from a single dashboard. Your AI assistant drafts product descriptions and answers customer questions while you stay in control of every word."
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "BowMart ist eine Storefront- und Bestellplattform für kleine Einzelhändler. Verbinden Sie Ihre Produkte, nehmen Sie Zahlungen entgegen und versenden Sie Bestellungen über ein einziges Dashboard. Ihr KI-Assistent entwirft Produktbeschreibungen und beantwortet Kundenfragen, während Sie die Kontrolle über jedes Wort behalten."
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 112,
+            "component": "Home",
+            "jsxPath": "p",
+            "element": "p"
+          }
+        },
+        {
+          "id": "src/App.tsx:134:11",
+          "hash": "gspUxE4HZUZ",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Products"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Produkte"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 134,
+            "component": "Products",
+            "jsxPath": "h2",
+            "element": "h2"
+          }
+        },
+        {
+          "id": "src/App.tsx:135:placeholder",
+          "hash": "kr0kjLVzIDS",
+          "translatable": true,
+          "type": "jsx:attribute",
+          "source": [
+            {
+              "text": "Search products"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Produkte suchen"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 135,
+            "component": "Products",
+            "jsxPath": "input[placeholder]",
+            "element": "input"
+          }
+        },
+        {
+          "id": "src/App.tsx:142:13",
+          "hash": "3iooR1IWZNG",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "No products match your search yet."
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Keine Produkte entsprechen Ihrer Suche."
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 142,
+            "component": "Products",
+            "jsxPath": "p",
+            "element": "p"
+          }
+        },
+        {
+          "id": "src/App.tsx:151:14",
+          "hash": "k3EEc6m29aP",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "ph": {
+                "id": "1",
+                "type": "jsx:var",
+                "data": "{p.price}",
+                "equiv": "p.price"
+              }
+            },
+            {
+              "text": " each"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": " pro Stück"
+              }
+            ]
+          },
+          "placeholders": [
+            {
+              "name": "p.price",
+              "kind": "variable",
+              "sourceExpr": "p.price"
+            }
+          ],
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 151,
+            "component": "Products",
+            "jsxPath": "span",
+            "element": "span"
+          }
+        },
+        {
+          "id": "src/App.tsx:152:15",
+          "hash": "4OutP6UAeEL",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Add to cart"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "In den Warenkorb"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 152,
+            "component": "Products",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        },
+        {
+          "id": "src/App.tsx:179:16",
+          "hash": "5LQeomki9dW",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Your cart"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Ihr Warenkorb"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 179,
+            "component": "Cart",
+            "jsxPath": "h2",
+            "element": "h2"
+          }
+        },
+        {
+          "id": "src/App.tsx:180:17",
+          "hash": "atZkrjHH1Xb",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Your cart is empty. Browse products to get started."
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Ihr Warenkorb ist leer. Stöbern Sie in den Produkten, um loszulegen."
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 180,
+            "component": "Cart",
+            "jsxPath": "p",
+            "element": "p"
+          }
+        },
+        {
+          "id": "src/App.tsx:181:18",
+          "hash": "8yXruwVFmuO",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Continue shopping"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Weiter einkaufen"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 181,
+            "component": "Cart",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        },
+        {
+          "id": "src/App.tsx:198:19",
+          "hash": "lDrRBG5Ox8n",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Remove"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Entfernen"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 198,
+            "component": "Cart",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        },
+        {
+          "id": "src/App.tsx:222:20",
+          "hash": "ilA03eddvel",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Checkout"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Zur Kasse"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 222,
+            "component": "Checkout",
+            "jsxPath": "h2",
+            "element": "h2"
+          }
+        },
+        {
+          "id": "src/App.tsx:223:21",
+          "hash": "kExCx9MtXTq",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Your order is confirmed. A receipt is on its way to your inbox."
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Ihre Bestellung ist bestätigt. Eine Quittung ist auf dem Weg in Ihren Posteingang."
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 223,
+            "component": "Checkout",
+            "jsxPath": "p",
+            "element": "p"
+          }
+        },
+        {
+          "id": "src/App.tsx:230:22",
+          "hash": "2yhq53nR03e",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Shipping address"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Lieferadresse"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 230,
+            "component": "Checkout",
+            "jsxPath": "h3",
+            "element": "h3"
+          }
+        },
+        {
+          "id": "src/App.tsx:231:placeholder",
+          "hash": "4HyeKhiw6L2",
+          "translatable": true,
+          "type": "jsx:attribute",
+          "source": [
+            {
+              "text": "Shipping address"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Lieferadresse"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 231,
+            "component": "Checkout",
+            "jsxPath": "input[placeholder]",
+            "element": "input"
+          }
+        },
+        {
+          "id": "src/App.tsx:232:24",
+          "hash": "i5Je2kSZtDT",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Payment method"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Zahlungsmethode"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 232,
+            "component": "Checkout",
+            "jsxPath": "h3",
+            "element": "h3"
+          }
+        },
+        {
+          "id": "src/App.tsx:234:25",
+          "hash": "6RezNk7DghK",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Pay with card"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Mit Karte bezahlen"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 234,
+            "component": "Checkout",
+            "jsxPath": "option",
+            "element": "option"
+          }
+        },
+        {
+          "id": "src/App.tsx:235:26",
+          "hash": "10Pdh7FLkXb",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Pay with PayPal"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Mit PayPal bezahlen"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 235,
+            "component": "Checkout",
+            "jsxPath": "option",
+            "element": "option"
+          }
+        },
+        {
+          "id": "src/App.tsx:236:27",
+          "hash": "a9ubQh8ybo2",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Pay with Apple Pay"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Mit Apple Pay bezahlen"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 236,
+            "component": "Checkout",
+            "jsxPath": "option",
+            "element": "option"
+          }
+        },
+        {
+          "id": "src/App.tsx:238:28",
+          "hash": "aazZr7FCQ3w",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Place order"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Bestellung aufgeben"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 238,
+            "component": "Checkout",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        },
+        {
+          "id": "src/App.tsx:248:29",
+          "hash": "1A7S5BbRbFO",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Account"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Konto"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 248,
+            "component": "Account",
+            "jsxPath": "h2",
+            "element": "h2"
+          }
+        },
+        {
+          "id": "src/App.tsx:249:30",
+          "hash": "cRKauhPagcb",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Welcome back to BowMart"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Willkommen zurück bei BowMart"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 249,
+            "component": "Account",
+            "jsxPath": "p",
+            "element": "p"
+          }
+        },
+        {
+          "id": "src/App.tsx:250:31",
+          "hash": "3rafbF8YQwo",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Your orders"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Ihre Bestellungen"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 250,
+            "component": "Account",
+            "jsxPath": "h3",
+            "element": "h3"
+          }
+        },
+        {
+          "id": "src/App.tsx:251:32",
+          "hash": "39jKranmjI5",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "You have not placed any orders yet."
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Sie haben noch keine Bestellungen aufgegeben."
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 251,
+            "component": "Account",
+            "jsxPath": "p",
+            "element": "p"
+          }
+        },
+        {
+          "id": "src/App.tsx:252:33",
+          "hash": "jGZteIFZ0IX",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Saved addresses"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Gespeicherte Adressen"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 252,
+            "component": "Account",
+            "jsxPath": "h3",
+            "element": "h3"
+          }
+        },
+        {
+          "id": "src/App.tsx:253:34",
+          "hash": "ipAQV7VFBLS",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "You have not saved any addresses yet."
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Sie haben noch keine Adressen gespeichert."
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 253,
+            "component": "Account",
+            "jsxPath": "p",
+            "element": "p"
+          }
+        },
+        {
+          "id": "src/App.tsx:254:35",
+          "hash": "kGh8dhUITSK",
+          "translatable": true,
+          "type": "jsx:element",
+          "source": [
+            {
+              "text": "Sign out"
+            }
+          ],
+          "targets": {
+            "de": [
+              {
+                "text": "Abmelden"
+              }
+            ]
+          },
+          "placeholders": null,
+          "properties": {
+            "file": "src/App.tsx",
+            "line": 254,
+            "component": "Account",
+            "jsxPath": "button",
+            "element": "button"
+          }
+        }
+      ]
+    }
+  ]
+}
