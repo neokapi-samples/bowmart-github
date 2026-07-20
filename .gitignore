@@ -7,3 +7,7 @@ dist-ssr
 public/translations
 # kapi project state (block store, TM, caches) — all regenerable
 .kapi/
+
+# Pseudo-locale is generated QA state, not committed source
+i18n-qps/
+i18n/qps/

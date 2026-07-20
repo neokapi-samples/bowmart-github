@@ -1,7 +1,7 @@
 # kapi project recipe for BowMart.
 #
 # Content = the localization catalogs kapi-react extracts from the React
-# source (i18n/**/*.klf). kapi translates them into a sibling i18n-<lang>/
+# source (i18n/**/*.klf). kapi translates them into a nested i18n/<lang>/
 # tree; `kapi-react compile` then turns those into the runtime catalogs the
 # app loads (public/translations/<lang>.json).
 #
@@ -23,8 +23,8 @@ defaults:
   source_language: en
   target_languages: [fr, de, ja, nb]
   brand_voice:
-    profile_file: l10n/brand-voice.yaml
-  termbase_source: l10n/termbase.klftb
+    profile_file: i18n/brand-voice.yaml
+  termbase_source: i18n/termbase.klftb
 content:
-  - path: i18n/**/*.klf
-    target: i18n-{lang}/{path}.klf
+  - path: i18n/src/**/*.klf
+    target: i18n/{lang}/{path}.klf
