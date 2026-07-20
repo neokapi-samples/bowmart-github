@@ -13,7 +13,7 @@ Actions; the first push deploys it)_
 ## From plain React to a Bowrain-connected, localized app
 
 The source is a small storefront (home, products, cart, checkout, account)
-written in plain English. Adding localization took kapi-react, a `.kapi` recipe
+written in plain English. Adding localization took kapi-react, a `kapi.yaml` recipe
 with a `server:` block, and connecting the recipe to a Bowrain project — no
 message keys and no `t()` calls in the components. Diff the localization commit
 to see exactly what it takes.
@@ -44,7 +44,7 @@ site. Coverage grows over time; it never blocks a deploy.
 
 ## The Bowrain connection
 
-The `bowmart.kapi` recipe declares a `server:` block pointing at a Bowrain
+The `kapi.yaml` recipe declares a `server:` block pointing at a Bowrain
 project (`<server>/<workspace>/<project-id>`). Two commands drive the loop:
 
 - **`kapi push`** — sends the source catalogs to Bowrain. The server converges
