@@ -1,4 +1,4 @@
-import { loadTranslations, setTranslations } from "@neokapi/kapi-react/runtime";
+import { loadTranslations, setTranslations } from "@neokapi/i18n-react/runtime";
 
 // Locale plumbing for the kapi-react runtime. Compiled per-locale catalogs
 // ship as static assets at public/translations/<locale>.json (produced by

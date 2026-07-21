@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { useNeokapi } from "@neokapi/kapi-react/runtime";
+import { useNeokapi } from "@neokapi/i18n-react/runtime";
 import { PRODUCTS } from "./data";
 import { applyLocale, LOCALES, setLocale, storedLocale, type Locale } from "./i18n";
 

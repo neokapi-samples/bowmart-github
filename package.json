@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "i18n:extract": "neokapi-i18n extract --config neokapi-i18n.config.json --src \"src/**/*.{tsx,jsx}\" --out i18n/src --target-locale qps",
+    "i18n:extract": "neokapi-i18n extract --config neokapi-i18n.config.json --src \"src/**/*.{tsx,jsx}\" --out i18n --target-locale qps",
     "i18n:compile": "neokapi-i18n compile i18n/src i18n/de i18n/fr i18n/nb --out public/translations --review"
   },
   "dependencies": {

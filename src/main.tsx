@@ -9,7 +9,7 @@ import "./styles.css";
 // its source/target/annotations shown (read-only, from public/translations/
 // review.json). Dev uses the plugin's own live overlay, so gate this to prod.
 if (import.meta.env.PROD) {
-  void import("@neokapi/kapi-react/review/hosted").then((m) => m.initKapiReviewHosted());
+  void import("@neokapi/i18n-react/review/hosted").then((m) => m.initKapiReviewHosted());
 }
 
 createRoot(document.getElementById("root")!).render(

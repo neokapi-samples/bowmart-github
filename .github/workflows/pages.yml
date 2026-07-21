@@ -2,8 +2,8 @@ name: Deploy site
 
 # Build the storefront and publish it to GitHub Pages — the live, multilingual
 # artifact. Every push to main rebuilds it from the committed catalogs:
-# `kapi-react compile` turns the source (i18n/) and any translated catalogs
-# (i18n-<lang>/) into the runtime dictionaries the app loads, then Vite builds
+# `neokapi-i18n compile` turns the source (i18n/) and any translated catalogs
+# (i18n/<lang>/) into the runtime dictionaries the app loads, then Vite builds
 # the static site. A language that has not been translated yet simply falls
 # back to English — coverage grows, it never blocks the deploy.
 

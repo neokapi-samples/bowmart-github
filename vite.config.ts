@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import neokapi from "@neokapi/kapi-react/vite";
+import neokapi from "@neokapi/i18n-react/vite";
 import kapiReactConfig from "./kapi-react.config.json" with { type: "json" };
 
 // The kapi-react Vite plugin (runtime mode) instruments the natural-language
