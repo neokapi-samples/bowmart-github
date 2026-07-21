@@ -11,7 +11,7 @@ export function App() {
   const [query, setQuery] = useState("");
   const [locale, setLocaleState] = useState<Locale>(() => storedLocale());
 
-  // Subscribe the tree to the kapi-react translation store so every string
+  // Subscribe the tree to the neokapi-i18n translation store so every string
   // re-renders when the active catalog changes, and load the stored locale on
   // mount (English is the source, so the default case loads nothing).
   useNeokapi();

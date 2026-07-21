@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import neokapi from "@neokapi/i18n-react/vite";
-import kapiReactConfig from "./neokapi-i18n.config.json" with { type: "json" };
+import neokapiConfig from "./neokapi-i18n.config.json" with { type: "json" };
 
-// The kapi-react Vite plugin (runtime mode) instruments the natural-language
+// The neokapi-i18n Vite plugin (runtime mode) instruments the natural-language
 // JSX text in this app at build time — no message keys, no t() calls. You
 // write English in the components; the plugin wires each string to the
 // compiled per-locale catalog under public/translations/.
@@ -14,6 +14,6 @@ export default defineConfig({
   base: process.env.VITE_BASE ?? "/",
   plugins: [
     react(),
-    neokapi({ mode: "runtime", review: true, componentMap: kapiReactConfig.componentMap }),
+    neokapi({ mode: "runtime", review: true, componentMap: neokapiConfig.componentMap }),
   ],
 });

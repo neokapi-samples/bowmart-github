@@ -1,8 +1,8 @@
 import { loadTranslations, setTranslations } from "@neokapi/i18n-react/runtime";
 
-// Locale plumbing for the kapi-react runtime. Compiled per-locale catalogs
+// Locale plumbing for the neokapi-i18n runtime. Compiled per-locale catalogs
 // ship as static assets at public/translations/<locale>.json (produced by
-// `kapi-react compile`). English is the source: it needs no catalog and never
+// `neokapi-i18n compile`). English is the source: it needs no catalog and never
 // flashes. A missing or partial catalog is never an error — untranslated
 // strings render the English source, so a language that is only partway done
 // simply falls back where it is not yet covered. That is the whole point of

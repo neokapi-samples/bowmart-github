@@ -1,8 +1,8 @@
 # kapi project recipe for BowMart.
 #
-# Content = the localization catalogs kapi-react extracts from the React
-# source (i18n/**/*.klf). kapi translates them into a nested i18n/<lang>/
-# tree; `kapi-react compile` then turns those into the runtime catalogs the
+# Content = the localization catalogs neokapi-i18n extracts from the React
+# source (i18n/src/**/*.klf). kapi translates them into a nested i18n/<lang>/
+# tree; `neokapi-i18n compile` then turns those into the runtime catalogs the
 # app loads (public/translations/<lang>.json).
 #
 # The source of truth is the React source; the catalogs are generated. Run

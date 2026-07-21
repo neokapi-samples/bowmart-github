@@ -13,7 +13,7 @@ Actions; the first push deploys it)_
 ## From plain React to a Bowrain-connected, localized app
 
 The source is a small storefront (home, products, cart, checkout, account)
-written in plain English. Adding localization took kapi-react, a `kapi.yaml` recipe
+written in plain English. Adding localization took neokapi-i18n, a `kapi.yaml` recipe
 with a `server:` block, and connecting the recipe to a Bowrain project — no
 message keys and no `t()` calls in the components. Diff the localization commit
 to see exactly what it takes.
@@ -26,16 +26,16 @@ You write natural English in your components — no message keys, no `t()` calls
 <button className="cta">Browse products</button>
 ```
 
-The [kapi-react](https://www.npmjs.com/package/@neokapi/kapi-react) Vite plugin
+The [neokapi-i18n](https://www.npmjs.com/package/@neokapi/i18n-react) Vite plugin
 instruments those strings at build time, and its CLI extracts them into a source
 catalog. From there the flow is server-side:
 
 ```
-kapi-react extract   src/**/*.tsx   → i18n/**/*.klf        (source catalog)
+neokapi-i18n extract   src/**/*.tsx   → i18n/src/**/*.klf        (source catalog)
 kapi push            i18n/          → Bowrain               (send source to the server)
 Bowrain              converges: translation memory → AI → brand & terminology checks
-kapi pull  /  PR     Bowrain        → i18n-<lang>/          (reviewed translations back)
-kapi-react compile   i18n-<lang>/   → public/translations/<lang>.json
+kapi pull  /  PR     Bowrain        → i18n/<lang>/          (reviewed translations back)
+neokapi-i18n compile   i18n/<lang>/   → public/translations/<lang>.json
 vite build           → the static site → GitHub Pages
 ```
 
@@ -52,7 +52,7 @@ project (`<server>/<workspace>/<project-id>`). Two commands drive the loop:
   provider, and runs brand-voice and terminology checks (the project glossary is
   a committed `l10n/termbase.klftb` — brand terms like *BowMart* are marked
   do-not-translate and stay verbatim in every locale).
-- **`kapi pull`** — brings the reviewed translations back into `i18n-<lang>/`.
+- **`kapi pull`** — brings the reviewed translations back into `i18n/<lang>/`.
   On a connected repository the Bowrain **GitHub App** opens a pull request
   instead, so a human reviews the translations before they land.
 
@@ -62,8 +62,8 @@ only rebuilds and publishes the site.
 ## The pipeline (`.github/workflows/pages.yml`)
 
 One workflow, no translation in CI: it regenerates the source catalog
-(`i18n/**/*.klf`) from the React source, compiles the committed catalogs (source
-+ any Bowrain-delivered `i18n-<lang>/`) into the runtime dictionaries the app
+(`i18n/src/**/*.klf`) from the React source, compiles the committed catalogs (source
++ any Bowrain-delivered `i18n/<lang>/`) into the runtime dictionaries the app
 loads, builds with the Pages base path, and deploys to GitHub Pages.
 
 ## Run it locally
