@@ -2,8 +2,8 @@
   "schemaVersion": "1.0",
   "kind": "kapi-localization-format",
   "generator": {
-    "id": "@neokapi/kapi-react",
-    "version": "1.2.0"
+    "id": "@neokapi/i18n-react",
+    "version": "1.2.2"
   },
   "project": {
     "id": "app",
