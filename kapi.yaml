@@ -28,3 +28,18 @@ defaults:
 content:
   - path: i18n/src/**/*.klf
     target: i18n/{lang}/{path}.klf
+# Two-gate ship model. The `ship` gate hides locales that are not yet
+# translated enough to offer: ja is still being converged on the server, so it
+# stays out of the picker until its catalog lands. The named `verified` gate
+# marks a locale as human-reviewed (no "AI" badge); flagship locales (fr, de)
+# are held to it, so they show as verified once reviewed and as AI otherwise —
+# the picker demonstrates hidden, verified, and AI states side by side.
+ship_gate:
+  translated: 100
+gates:
+  verified:
+    reviewed: 25
+verified_gates:
+  - when:
+      locales: [fr, de]
+    gate: verified

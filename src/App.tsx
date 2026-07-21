@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
-import { useNeokapi } from "@neokapi/i18n-react/runtime";
+import { useMemo, useState } from "react";
+import { Other, Plural, One, useNeokapi } from "@neokapi/i18n-react/runtime";
 import { PRODUCTS } from "./data";
-import { applyLocale, LOCALES, setLocale, storedLocale, type Locale } from "./i18n";
+import { setLocale, storedLocale, type Locale } from "./i18n";
+import { LanguagePicker } from "./LanguagePicker";
 
 type Tab = "home" | "products" | "cart" | "checkout" | "account";
 
@@ -12,12 +13,9 @@ export function App() {
   const [locale, setLocaleState] = useState<Locale>(() => storedLocale());
 
   // Subscribe the tree to the neokapi-i18n translation store so every string
-  // re-renders when the active catalog changes, and load the stored locale on
-  // mount (English is the source, so the default case loads nothing).
+  // re-renders when the active catalog changes. The stored locale is applied
+  // in main.tsx before the first render (no flash of English).
   useNeokapi();
-  useEffect(() => {
-    void applyLocale(storedLocale());
-  }, []);
 
   const changeLocale = (next: Locale) => {
     setLocaleState(next);
@@ -55,19 +53,7 @@ export function App() {
             Account
           </button>
         </nav>
-        <select
-          className="lang"
-          value={locale}
-          onChange={(e) => changeLocale(e.target.value as Locale)}
-          aria-label="Language"
-          translate="no"
-        >
-          {LOCALES.map((l) => (
-            <option key={l.value} value={l.value}>
-              {l.label}
-            </option>
-          ))}
-        </select>
+        <LanguagePicker locale={locale} onChange={changeLocale} />
       </header>
 
       <main>
@@ -188,7 +174,10 @@ function Cart({
     <section>
       <h2>Your cart</h2>
       <p className="count">
-        {items.length === 1 ? "1 item in your cart" : `${items.length} items in your cart`}
+        <Plural count={items.length}>
+          <One># item in your cart</One>
+          <Other># items in your cart</Other>
+        </Plural>
       </p>
       <ul className="lines">
         {items.map((p, i) => (

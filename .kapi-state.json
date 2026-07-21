@@ -1,0 +1,820 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "kapi-project-state",
+  "units": [
+    {
+      "unit": "src/App.tsx:120:11",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:ff09a8b6df04b7a4dfd9027db3456eda587447ea3ab18fd18f0e81a978ce0857",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:120:11",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:49b3cf78ac700f0eacb263f6cc097bbec41af8a4d6df6980dfd9188617ad1f19",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:121:placeholder",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:b8a34886f8270126e11a770251a13e480ad23efcf1447fe364f52ea6879fa8bc",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:121:placeholder",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:e0accce66607e96e329028ad7c39ee76f39c5e3cf4c7a09bbd90ba6fe2967c9c",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:128:13",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:d49d6d49b5671650f48b2fded3c46360fc22bdd6f59754fdfcf8f5e51def2a21",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:128:13",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:0e732fca42f388833642fee5e06b5f7c7baef857bd7c575f90b1a5436075e004",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:137:14",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:84795a2d374cbeb71216b8a1d907e3f6fc20380c0cbf7fb5aad384c44cdab77d",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:137:14",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:33769aca792e8af2ca7d7bc23c51795079d4486417236a545c088ca15d93afbd",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:138:15",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:9284974089a1b9416a8f34596c8bd50650509d0814fe0300448bf169e332be55",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:138:15",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:d18abced4ca23346290b430fdc0335b3a5707403f491567ba42ec78eafaad50a",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:165:16",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:c7b8171dcc8fd4f3024bb31ee0b8b987e362e6db213350def69dd7ac59d7fdab",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:165:16",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:94a5a6d3bf22ed2605e32eb486e5cf90ddf3635ad8e72fb5958003e9d25c5cf0",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:166:17",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:54352c2e5e6997e96d28c36c96fa72908e9de2590296a8e42b67d0dd14cf6a6f",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:166:17",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:c9d5d6a0fcd69802767e7aa7dae310b880d87b265bffa775fac886c567e97e57",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:167:18",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:327b96bead1334fdfecdccb05f89419f3f7399f0671d294220907d5085ce83e1",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:167:18",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:2b100cd1f7f88dd04dbd838de799a4166c07bea632f84e0ffc9ca8244c38b830",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:176:19",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:b34a43634387550d08de496ce6017cd2c2925a395ee393bbe3e7f504c5e648aa",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:176:19",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:e7a347db8fb993a3aca0bf9d48c015f10d4608719f67bdfd76cdd0b9f94eed3f",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:187:20",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:3828375a2d45384bdec08982937014b61da700bb3503ecb859b8f97398f8c198",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:187:20",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:5e5d0216ce0b5b9ef8c015800730294a0ae3fb3f153f3015423b908dbe579d63",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:211:21",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:95176937a3c8491fc31b73cbe338c8a6977100954988ae475670062b17ddd298",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:211:21",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:2c2c204d01cce90b07b2e0cd990537c50e82ca427bfdf3a3de02e0721f533a17",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:212:22",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:b4d6a5207e3d544e45eec4b9083e9fc7b5a1f3cef2cb4f3a88d83041938a166e",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:212:22",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:ae282f110fd00a231b134061d83c6d43e5ef98aa482fd7e80b18c385372b8ffe",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:219:23",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:cc7697f725aa99af5def59acc19162492557029c910da5b4ec75c6a67f6f38b5",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:219:23",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:d49465eb6f153d3f4f70e62fa9b575986436a62034851a72200674ee888a4433",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:220:placeholder",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:cc7697f725aa99af5def59acc19162492557029c910da5b4ec75c6a67f6f38b5",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:220:placeholder",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:d49465eb6f153d3f4f70e62fa9b575986436a62034851a72200674ee888a4433",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:221:25",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:aa64fbad36d883d3518232a529ed7abf73cf82b29d74d2496ee160f6336f4290",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:221:25",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:865ea2f1fe9ee4e062f71bd3a603d8e7232d13c32e162a67441bdb05346693a9",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:223:26",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:fed65067fb87fd9975f78f1a5f2dc0b827890d0791e65df02207dd59f63b7f8a",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:223:26",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:783786d6f38bcc9a5372a9d815f67c1ed8011b48458601416d5c23460f5dbe59",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:224:27",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:6cfc13751e7d3f23ac6467f4a8be44150d83f80da2bedd552de2cf69272fe1be",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:224:27",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:a70085308194096951be337d6496ba106493374c8c519808326364a67e0ab128",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:225:28",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:face4b0048328dc1150343257da4ce87d3fcf6928b3f2483f3513aec5100dd94",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:225:28",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:7ebe3ed36014fe26add80e441aa27209e164e1916f2d3393889f9cb645cca4dd",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:227:29",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:9f8108fc155931a14ae8046c4d50efddac953e6b90313cb731eb1987a485eab1",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:227:29",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:2c2c204d01cce90b07b2e0cd990537c50e82ca427bfdf3a3de02e0721f533a17",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:237:30",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:df8525011f618f54a41da2ac9e08cbf57c8f4674244d601d41f0fa18d54c19d2",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:237:30",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:dacd47619a726cd9000bce980932d6cd6b013524a504ea93f00f819d3f1a9ceb",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:238:31",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:2bc49c8db8c84f981ae611ccc22f5f14bff8f278d463eebe2657867e09e58be0",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:238:31",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:c830861281fecdef2937b759486e8fc5548678947659447c893ae64dee8b0859",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:239:32",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:70c05c0f7be3eb1d3d029e4f50cd2d280b2bb877e9eb3e479b67f9414b597ff0",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:239:32",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:abaf90c69862dbc840ecfae4915b200aec00b28bf06060a0c0b3bba1f2bc904b",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:240:33",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:acdc191566c43bc4635a86ec9edd53752fa21e500677745d3c9871c6a1cca3c1",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:240:33",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:50fc5dd95eae8d151c209175eee7d1c305953cd6d0feda25cc47cfbb67aa4e48",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:241:34",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:d0bc7e14b9cded9b79a1d0128cdc0e7e72a8a88cef1a488cbae5ef57cc11fd96",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:241:34",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:7934e654845ecca1642082e7c2779894c120c9992378a77665d078e8d296ae55",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:242:35",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:6bc3e1f7788554cf8dc4e303398bc5ac68cf39b1cbbf72e98611523c1eda9749",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:242:35",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:bd316d81daabe5eacf5eb8c04b519c126f573d4930d4307ca87b78aec1988897",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:243:36",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:545f8be33bf06a1cb6eaa138814f3530c78354caf5f2edcec690c2cf8f9251bc",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:243:36",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:b18aeed1a806af345dc778153697c0242a31308bf0986865154915cd62815b08",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:36:0",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:2cefefd5a3aa278dd99b9799703fab894acfc37b98b7c437a1e3d356915a68ec",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:36:0",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:2cefefd5a3aa278dd99b9799703fab894acfc37b98b7c437a1e3d356915a68ec",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:40:1",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:e04d24c52b3d2893ac140c8aa2f0a0d678d8114d421a1cbbd34da154bee23ec5",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:40:1",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:533161735639c51adb4623f3780b497601d7b82108e6f03f5b65b5dd4c89f616",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:43:2",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:ff09a8b6df04b7a4dfd9027db3456eda587447ea3ab18fd18f0e81a978ce0857",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:43:2",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:49b3cf78ac700f0eacb263f6cc097bbec41af8a4d6df6980dfd9188617ad1f19",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:46:3",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:d6de36e1cfbb892cadbc1a3dd1fc871b53f0935256a1b1e4ab3d2c06fe325320",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:46:3",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:3a4ec4cdb9b306709d4831bdc7799b7c2325c1a4e7de35d3e304c44841e12af1",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:49:4",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:95176937a3c8491fc31b73cbe338c8a6977100954988ae475670062b17ddd298",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:49:4",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:2c2c204d01cce90b07b2e0cd990537c50e82ca427bfdf3a3de02e0721f533a17",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:52:5",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:df8525011f618f54a41da2ac9e08cbf57c8f4674244d601d41f0fa18d54c19d2",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:52:5",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:dacd47619a726cd9000bce980932d6cd6b013524a504ea93f00f819d3f1a9ceb",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:77:6",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:f527c6260257b16d1c3e28c6987a9711a7a4a4dc47d1586f82db404883541ab0",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:77:6",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:994eef9074a4c7f584fa04869022da7c6d768ab8c8639945f6740c7a3d6b684e",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:90:7",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:0ce58dca62f37c075106a5fe2f0d09288ea1ae8721e5ac5779a1ea44571cfb3a",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:90:7",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:7edecc5239a5697b4fee0ac7e648391dadd810aa1546ea49553f60154b2679b7",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:91:8",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:223303799fbc2f511a4bbc8fd2ec55d6f71edafe86bce347a6a015a57e3f6fdb",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:91:8",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:f286f4b8ef40b6dacc52543a6aa659fb06b85ab8850e80f4d1fe810a6970cc95",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:95:9",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:7ab3d959de2fb2d048fd705bce97f7b57d8ed94acd81e664beaaef7016e4191b",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:95:9",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:4d96dac79cf0691f2e7532f263e56c8c9986a5c41ccbeb3e5d0e358956eef33f",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:98:10",
+      "variant": "de",
+      "status": "reviewed",
+      "targetHash": "sha256:d12ce42ea6d28ddc6834232697dfa86426232c85edf85aaaf912236d314788b9",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    },
+    {
+      "unit": "src/App.tsx:98:10",
+      "variant": "fr",
+      "status": "reviewed",
+      "targetHash": "sha256:c1e5e4e21bff8521500b2c3e01220935dfeb722aa0893217967f7db8d3f6d7ad",
+      "decision": {
+        "reviewState": "approved",
+        "at": "2026-07-21T11:33:55Z"
+      },
+      "updated": "2026-07-21T11:33:55Z"
+    }
+  ]
+}

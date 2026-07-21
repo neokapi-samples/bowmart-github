@@ -8,14 +8,16 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "i18n:extract": "neokapi-i18n extract --config neokapi-i18n.config.json --src \"src/**/*.{tsx,jsx}\" --out i18n --target-locale qps",
-    "i18n:compile": "neokapi-i18n compile i18n/src i18n/de i18n/fr i18n/nb --out public/translations --review"
+    "i18n:extract": "neokapi-i18n extract --config neokapi-i18n.config.json --src \"src/**/*.{tsx,jsx}\" --out i18n",
+    "i18n:compile": "neokapi-i18n compile i18n/src i18n/de i18n/fr i18n/nb --out public/translations --review",
+    "i18n:ship": "kapi status --ship --emit public/ship.json"
   },
   "dependencies": {
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
+    "@neokapi/i18n-react-lint": "^0.1.1",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
@@ -23,6 +25,6 @@
     "oxlint": "^1.71.0",
     "typescript": "~6.0.2",
     "vite": "^8.1.1",
-    "@neokapi/i18n-react": "^1.2.0"
+    "@neokapi/i18n-react": "^1.2.3"
   }
 }

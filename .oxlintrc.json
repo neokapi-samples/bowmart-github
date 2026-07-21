@@ -1,8 +1,13 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": ["react", "typescript", "oxc"],
+  "jsPlugins": ["@neokapi/i18n-react-lint/oxlint"],
   "rules": {
     "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+    "react/only-export-components": ["warn", { "allowConstantExport": true }],
+    "neokapi-i18n/t-literal-first-arg": "error",
+    "neokapi-i18n/t-no-concat": "error",
+    "neokapi-i18n/no-concat-in-translatable-attr": "error",
+    "neokapi-i18n/no-string-literal-jsx-expr": "warn"
   }
 }

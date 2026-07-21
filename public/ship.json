@@ -1,0 +1,6 @@
+{
+  "de": {"shippable":true,"verified":true},
+  "fr": {"shippable":true,"verified":true},
+  "ja": {"shippable":false,"verified":false},
+  "nb": {"shippable":true,"verified":false}
+}

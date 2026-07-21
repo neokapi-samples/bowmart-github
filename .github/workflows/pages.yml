@@ -3,9 +3,11 @@ name: Deploy site
 # Build the storefront and publish it to GitHub Pages — the live, multilingual
 # artifact. Every push to main rebuilds it from the committed catalogs:
 # `neokapi-i18n compile` turns the source (i18n/) and any translated catalogs
-# (i18n/<lang>/) into the runtime dictionaries the app loads, then Vite builds
-# the static site. A language that has not been translated yet simply falls
-# back to English — coverage grows, it never blocks the deploy.
+# (i18n/<lang>/) into the runtime dictionaries the app loads; `kapi status
+# --ship` emits the picker manifest (public/ship.json) that decides which
+# locales the language picker offers and badges; then Vite builds the static
+# site. A language that has not been translated yet simply falls back to
+# English — coverage grows, it never blocks the deploy.
 
 on:
   push:
@@ -27,10 +29,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: "22" }
+        with: { node-version: "24" }
       - run: npm ci
       - run: npm run i18n:extract
       - run: npm run i18n:compile
+      # Emit public/ship.json — the ship-aware language-picker manifest
+      # (locale → {shippable, verified}). The picker hides un-shippable locales
+      # and badges shippable-but-unverified ones "AI".
+      - uses: neokapi/setup-kapi@v1
+        with: { version: "1.2.0-rc15", plugins: "" }
+      - run: npm run i18n:ship
       # A project Pages site is served under /<repo>/, so the app's base path
       # must match for assets and the catalog fetch to resolve.
       - run: npm run build
